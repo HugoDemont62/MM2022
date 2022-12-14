@@ -1,0 +1,78 @@
+
+*
+  box-sizing: border-box
+  margin: 0 0
+  font-family: "Founders Grotesque Regular", sans-serif
+
+html
+  font-size: 62.5%
+
+/*/////////////////////////////////   Header //////////////////////////////////////*
+header
+  background-color: #202020
+  height: 100px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-inline: 6em
+  position: fixed
+
+header a
+  height: 100%
+
+header img
+  height: 100%
+
+header i
+  color: white
+  font-size: 30px
+  transition: 1s
+
+header i:hover
+  color: gray
+
+header .icone
+  display: flex
+  gap: 5em
+
+/*///////////////////////////////////////// Footer //////////////////////////////////////*
+footer
+  position: absolute
+  background: #202020
+  width: 100%
+  color: white
+  text-decoration: none
+  display: flex
+  justify-content: center
+  flex-direction: column
+  & h1
+    font-size: 52px
+    text-transform: uppercase
+    padding-bottom: 0.5em
+  & .container
+    display: flex
+    color: white
+    text-decoration: none
+    gap: 10em
+    padding-inline: 20em
+    padding-block: 8em
+    &:where(.pages, .musee, .reseaux, .propos)
+      display: flex
+      flex-direction: column
+      gap: 1em
+    & a
+      color: white
+      text-decoration: none
+      transition: 1s
+      font-size: 24px
+      &:hover
+        color: gray
+      & .copyright
+        display: flex
+        font-size: 20px
+        color: white
+        background-color: rgba(0, 0, 0, 0.475)
+        align-items: center
+        justify-content: center
+        padding: 2em
