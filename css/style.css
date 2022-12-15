@@ -112,6 +112,10 @@ h2 {
   opacity: 0.95;
   border-radius: 10px;
 }
+.item a img {
+  width: 200px;
+  height: 200px;
+}
 
 .a {
   transform: rotateY(0deg) translateZ(250px);
@@ -371,6 +375,7 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   font-family: "Founders Grotesque Regular", sans-serif;
+  padding: 1rem;
 }
 .salle__oeuvres .oeuvre a {
   text-decoration: none;
@@ -437,12 +442,6 @@ footer .copyright {
   object-fit: contain;
   height: 100%;
 }
-#cont .contai .comment label {
-  font-size: 32px;
-}
-#cont .contai .comment input {
-  padding-top: 1em;
-}
 #cont .contai .nom h3 {
   color: white;
   font-size: 42px;
@@ -459,6 +458,9 @@ footer .copyright {
   gap: 5em;
   padding-bottom: 5em;
 }
+#cont .formulaire form .comment input {
+  margin-block: 1rem;
+}
 #cont .formulaire button {
   font-size: 18px;
   color: white;
@@ -474,6 +476,19 @@ footer .copyright {
 .formulaire button:hover {
   background-color: white;
   color: #202020;
+}
+
+.allCom {
+  width: 40%;
+  margin-block: 1rem;
+}
+.allCom .commentaire {
+  border-bottom: #D6D6D6 1px solid;
+  padding: 1rem;
+}
+.allCom .commentaire .user h3 {
+  padding-bottom: 1rem;
+  color: red;
 }
 
 #cont input {
