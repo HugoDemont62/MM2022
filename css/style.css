@@ -4,11 +4,7 @@
   font-family: "Founders Grotesque Regular", sans-serif;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-header {
+.header1 {
   background-color: #202020;
   height: 100px;
   width: 100%;
@@ -17,29 +13,37 @@ header {
   justify-content: space-between;
   padding-inline: 6em;
   position: fixed;
-  z-index: 999;
+  z-index: 2;
 }
-header a {
+.header1 a {
   height: 100%;
 }
-header img {
+.header1 img {
   height: 100%;
 }
-header i {
-  color: white;
-  font-size: 30px;
-  transition: 1s;
-}
-header i:hover {
-  color: gray;
-}
-header .icone {
+.header1 .icone {
   display: flex;
   gap: 5em;
 }
+.header1 i {
+  color: #F6F6F6;
+  font-size: 30px;
+  transition: 1s;
+}
+.header1 i:hover {
+  color: gray;
+}
+
+h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  font-family: "Founders Grotesque Regular", sans-serif;
+  font-weight: 700;
+}
 
 #presentation {
-  background-color: #d6d6d6;
+  background-color: #D6D6D6;
   padding-top: 15em;
   display: flex;
   flex-direction: column;
@@ -51,21 +55,14 @@ header .icone {
   padding-bottom: 5em;
   padding-inline: 10em;
 }
-#presentation .muse h2 {
-  font-size: 52px;
-  text-transform: uppercase;
-  padding-bottom: 1em;
-  font-family: "Founders Grotesque Regular", sans-serif;
-  font-weight: 700;
-}
 #presentation .muse p {
-  font-size: 16px;
+  font-size: 1.3rem;
 }
 #presentation .muse img {
   height: 50%;
 }
 #presentation .article {
-  background-color: #ededed;
+  background-color: #F6F6F6;
   color: black;
   padding-inline: 10em;
   padding-block: 10em;
@@ -88,43 +85,37 @@ header .icone {
 #presentation .article .carousel .item {
   display: block;
   position: absolute;
-  background: #000;
+  background: #202020;
   width: 250px;
   height: 200px;
   line-height: 200px;
   font-size: 5em;
   text-align: center;
-  color: #fff;
+  color: #F6F6F6;
   opacity: 0.95;
   border-radius: 10px;
 }
-
-.a {
+#presentation .article .carousel .a {
   transform: rotateY(0deg) translateZ(250px);
   background: #ed1c24;
 }
-
-.b {
+#presentation .article .carousel .b {
   transform: rotateY(60deg) translateZ(250px);
   background: #0072bc;
 }
-
-.c {
+#presentation .article .carousel .c {
   transform: rotateY(120deg) translateZ(250px);
   background: #39b54a;
 }
-
-.d {
+#presentation .article .carousel .d {
   transform: rotateY(180deg) translateZ(250px);
   background: #f26522;
 }
-
-.e {
+#presentation .article .carousel .e {
   transform: rotateY(240deg) translateZ(250px);
   background: #630460;
 }
-
-.f {
+#presentation .article .carousel .f {
   transform: rotateY(300deg) translateZ(250px);
   background: #8c6239;
 }
@@ -138,13 +129,13 @@ header .icone {
   cursor: pointer;
   background: #ccc;
   border-radius: 5px;
-  border-top: 1px solid #fff;
-  box-shadow: 0 5px 0 #999;
+  border-top: 1px solid #F6F6F6;
+  box-shadow: 0 5px 0 #D6D6D6;
   transition: box-shadow 0.1s, top 0.1s;
 }
 
 #next:hover, #prev:hover {
-  color: #000;
+  color: #202020;
 }
 
 #next:active, #prev:active {
@@ -161,7 +152,7 @@ header .icone {
 }
 
 .media {
-  background-color: #d6d6d6;
+  background-color: #F6F6F6;
   padding-inline: 10em;
   display: flex;
   gap: 2em;
@@ -169,9 +160,9 @@ header .icone {
   padding-bottom: 5em;
 }
 .media p {
-  font-size: 16px;
+  font-size: 1.3rem;
 }
-.media .video {
+.media video {
   background-color: #202020;
   height: 500px;
   width: 500px;
@@ -185,15 +176,14 @@ footer {
   position: absolute;
   background: #202020;
   width: 100%;
-  color: white;
+  color: #F6F6F6;
   text-decoration: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
   box-shadow: 1px -4px 5px rgba(26, 26, 26, 0.67);
 }
-
-.container {
+footer .container {
   display: flex;
   color: white;
   text-decoration: none;
@@ -202,38 +192,155 @@ footer {
   padding-block: 8em;
   justify-content: center;
 }
-
-.container :where(.pages, .musee, .reseaux, .propos) {
+footer :where(.pages, .musee, .reseaux, .propos) {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-
-h1 {
+footer h1 {
   font-size: 32px;
   text-transform: uppercase;
   padding-bottom: 0.5em;
 }
-
-.container a {
-  color: white;
+footer a {
+  color: #F6F6F6;
   text-decoration: none;
   transition: 1s;
   font-size: 16px;
 }
-
-.container a:hover {
-  color: gray;
+footer a:hover {
+  color: #D6D6D6;
 }
-
-.copyright {
+footer .copyright {
   display: flex;
   font-size: 20px;
-  color: white;
+  color: #F6F6F6;
   background-color: rgba(0, 0, 0, 0.475);
   align-items: center;
   justify-content: center;
   padding: 2em;
+}
+
+.header2 {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+}
+.header2 img {
+  height: 100%;
+}
+.header2 a {
+  height: 100%;
+}
+
+#contain2 {
+  background-color: #202020;
+  padding-inline: 40em;
+  padding-block: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+}
+#contain2 h3 {
+  color: white;
+  font-size: 5rem;
+  padding-bottom: 1.5em;
+}
+#contain2 input:not(.insere) {
+  color: #F6F6F6;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 2px solid #F6F6F6;
+  border-radius: 5px;
+  font-size: 24px;
+  outline: none;
+  border-inline: none;
+  border-top: none;
+}
+#contain2 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contain2 button {
+  font-size: 1.3rem;
+  color: white;
+  width: 30%;
+  height: 60px;
+  background-color: rgb(32, 92, 92);
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#contain2 button:hover {
+  background-color: white;
+  color: #202020;
+}
+
+.reg {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  padding-bottom: 1em;
+}
+.reg span {
+  color: white;
+}
+.reg a {
+  text-decoration: none;
+  color: rgb(32, 92, 92);
+  transition: 0.5s;
+}
+.reg a:hover {
+  color: white;
+}
+
+.log {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  padding-bottom: 1em;
+}
+.log span {
+  color: white;
+}
+.log a {
+  text-decoration: none;
+  color: rgb(32, 92, 92);
+  transition: 0.5s;
+}
+
+.log a:hover {
+  color: white;
+}
+
+.upload {
+  color: white;
+}
+
+.upload .but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(32, 92, 92);
+  border: 0;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

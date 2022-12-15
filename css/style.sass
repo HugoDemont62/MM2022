@@ -1,14 +1,26 @@
+//*Made By Florian T AND Hugo Demont*//
 
+//Colors
+$noir: #202020
+$blanc: #F6F6F6
+$gris: #D6D6D6
+$vertCacaDoi: #329292
+
+//Font
+$font: "Founders Grotesque Regular", sans-serif
+
+//Tailles
+$titre: 5rem
+$para: 1.3rem
+
+////////*Glob*////
 *
   box-sizing: border-box
   margin: 0 0
-  font-family: "Founders Grotesque Regular", sans-serif
+  font-family: $font
 
-html
-  font-size: 62.5%
-
-header
-  background-color: #202020
+.header1
+  background-color: $noir
   height: 100px
   width: 100%
   display: flex
@@ -16,23 +28,30 @@ header
   justify-content: space-between
   padding-inline: 6em
   position: fixed
-  z-index: 999
+  z-index: 2
   & a
     height: 100%
   & img
     height: 100%
+  & .icone
+    display: flex
+    gap: 5em
   & i
-    color: white
+    color: $blanc
     font-size: 30px
     transition: 1s
   & i:hover
     color: gray
-  & .icone
-    display: flex
-    gap: 5em
+
+h2
+  font-size: $titre
+  text-transform: uppercase
+  padding-bottom: 1em
+  font-family: $font
+  font-weight: 700
 
 #presentation
-  background-color: #d6d6d6
+  background-color: $gris
   padding-top: 15em
   display: flex
   flex-direction: column
@@ -42,18 +61,12 @@ header
     color: black
     padding-bottom: 5em
     padding-inline: 10em
-    & h2
-      font-size: 52px
-      text-transform: uppercase
-      padding-bottom: 1em
-      font-family: "Founders Grotesque Regular", sans-serif
-      font-weight: 700
     & p
-      font-size: 16px
+      font-size: $para
     & img
       height: 50%
   & .article
-    background-color: #ededed
+    background-color: $blanc
     color: black
     padding-inline: 10em
     padding-block: 10em
@@ -73,34 +86,34 @@ header
       & .item
         display: block
         position: absolute
-        background: #000
+        background: $noir
         width: 250px
         height: 200px
         line-height: 200px
         font-size: 5em
         text-align: center
-        color: #fff
+        color: $blanc
         opacity: 0.95
         border-radius: 10px
 
-.a
-  transform: rotateY(0deg) translateZ(250px)
-  background: #ed1c24
-.b
-  transform: rotateY(60deg) translateZ(250px)
-  background: #0072bc
-.c
-  transform: rotateY(120deg) translateZ(250px)
-  background: #39b54a
-.d
-  transform: rotateY(180deg) translateZ(250px)
-  background: #f26522
-.e
-  transform: rotateY(240deg) translateZ(250px)
-  background: #630460
-.f
-  transform: rotateY(300deg) translateZ(250px)
-  background: #8c6239
+      & .a
+        transform: rotateY(0deg) translateZ(250px)
+        background: #ed1c24
+      & .b
+        transform: rotateY(60deg) translateZ(250px)
+        background: #0072bc
+      & .c
+        transform: rotateY(120deg) translateZ(250px)
+        background: #39b54a
+      & .d
+        transform: rotateY(180deg) translateZ(250px)
+        background: #f26522
+      & .e
+        transform: rotateY(240deg) translateZ(250px)
+        background: #630460
+      & .f
+        transform: rotateY(300deg) translateZ(250px)
+        background: #8c6239
 
 #next, #prev
   color: rgb(37, 37, 37)
@@ -111,12 +124,12 @@ header
   cursor: pointer
   background: #ccc
   border-radius: 5px
-  border-top: 1px solid #fff
-  box-shadow: 0 5px 0 #999
+  border-top: 1px solid $blanc
+  box-shadow: 0 5px 0 $gris
   transition: box-shadow 0.1s, top 0.1s
 
 #next:hover, #prev:hover
-  color: #000
+  color: $noir
 
 #next:active, #prev:active
   top: 104px
@@ -128,16 +141,16 @@ header
   left: 5em
 
 .media
-  background-color: #d6d6d6
+  background-color: $blanc
   padding-inline: 10em
   display: flex
   gap: 2em
   padding-block: 7em
   padding-bottom: 5em
   & p
-    font-size: 16px
-  & .video
-    background-color: #202020
+    font-size: $para
+  & video
+    background-color: $noir
     height: 500px
     width: 500px
   & .txt
@@ -146,48 +159,149 @@ header
 
 footer
   position: absolute
-  background: #202020
+  background: $noir
   width: 100%
-  color: white
+  color: $blanc
   text-decoration: none
   display: flex
   justify-content: center
   flex-direction: column
   box-shadow: 1px -4px 5px rgba(26, 26, 26, 0.67)
+  & .container
+    display: flex
+    color: white
+    text-decoration: none
+    gap: 8em
+    padding-inline: 15em
+    padding-block: 8em
+    justify-content: center
+  & :where(.pages, .musee, .reseaux, .propos)
+    display: flex
+    flex-direction: column
+    gap: 1em
+  & h1
+    font-size: 32px
+    text-transform: uppercase
+    padding-bottom: 0.5em
+  & a
+    color: $blanc
+    text-decoration: none
+    transition: 1s
+    font-size: 16px
+    &:hover
+      color: $gris
+  & .copyright
+    display: flex
+    font-size: 20px
+    color: $blanc
+    background-color: rgba(0, 0, 0, 0.475)
+    align-items: center
+    justify-content: center
+    padding: 2em
 
-.container
+
+
+//Login Register Enregistrement d'oeuvre
+
+.header2
+  height: 300px
   display: flex
-  color: white
-  text-decoration: none
-  gap: 8em
-  padding-inline: 15em
-  padding-block: 8em
-  justify-content: center
-
-.container :where(.pages, .musee, .reseaux, .propos)
-  display: flex
-  flex-direction: column
-  gap: 1em
-
-h1
-  font-size: 32px
-  text-transform: uppercase
-  padding-bottom: 0.5em
-
-.container a
-  color: white
-  text-decoration: none
-  transition: 1s
-  font-size: 16px
-
-.container a:hover
-  color: gray
-
-.copyright
-  display: flex
-  font-size: 20px
-  color: white
-  background-color: rgba(0, 0, 0, 0.475)
   align-items: center
   justify-content: center
-  padding: 2em
+  background-color: $noir
+  & img
+    height: 100%
+  & a
+    height: 100%
+
+#contain2
+  background-color: $noir
+  padding-inline: 40em
+  padding-block: 5em
+  display: flex
+  flex-direction: column
+  gap: 10em
+  & h3
+    color: white
+    font-size: $titre
+    padding-bottom: 1.5em
+  & input:not(.insere)
+    color: $blanc
+    background-color: transparent
+    width: 100%
+    border-bottom: 2px solid $blanc
+    border-radius: 5px
+    font-size: 24px
+    outline: none
+    border-inline: none
+    border-top: none
+
+  & .button
+    display: flex
+    align-items: center
+    justify-content: center
+  & button
+    font-size: $para
+    color: white
+    width: 30%
+    height: 60px
+    background-color: rgb(32, 92, 92)
+    border: 0
+    border-radius: 10px
+    transition: 0.5s
+    &:hover
+      background-color: white
+      color: #202020
+
+.reg
+  font-size: 18px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 0.7em
+  padding-bottom: 1em
+  & span
+    color: white
+  & a
+    text-decoration: none
+    color: rgb(32, 92, 92)
+    transition: 0.5s
+    &:hover
+      color: white
+
+.log
+  font-size: 18px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 0.7em
+  padding-bottom: 1em
+  & span
+    color: white
+  & a
+    text-decoration: none
+    color: rgb(32, 92, 92)
+    transition: 0.5s
+
+.log a:hover
+  color: white
+
+.upload
+  color: white
+
+.upload .but
+  display: flex
+  align-items: center
+  justify-content: center
+
+.upload input
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgb(32, 92, 92)
+  border: 0
+  height: 40px
+  padding: 10px
+  border-radius: 10px
