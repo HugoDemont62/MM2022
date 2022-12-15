@@ -69,7 +69,15 @@ h2
   background-color: #ededed
   color: black
   padding-inline: 10em
-  padding-block: 10em
+  padding-bottom: 15em
+  padding-top: 5em
+
+.article h2
+  font-size: 52px
+  text-transform: uppercase
+  padding-bottom: 3em
+  font-family: "Founders Grotesque Regular", sans-serif
+  font-weight: 700
 
 .contain
   margin: 0 auto
@@ -133,13 +141,10 @@ h2
   position: absolute
   padding: 1em 2em
   cursor: pointer
-  background: #ccc
-  border-radius: 5px
-  border-top: 1px solid #fff
+  font-size: 60px
   transition: box-shadow 0.1s, top 0.1s
   top: 50%
   transform: translateY(-50%)
-  box-shadow: 0 1px 0 #999
 
 #next:hover, #prev:hover
   color: #000
@@ -210,8 +215,6 @@ footer
     justify-content: center
     padding: 2em
 
-
-
 //Login Register Enregistrement d'oeuvre
 
 .header2
@@ -235,7 +238,7 @@ footer
   & h3
     color: white
     font-size: $titre
-    padding-bottom: 1.5em
+    padding-block: 1rem
   & input:not(.insere)
     color: $blanc
     background-color: transparent
@@ -316,3 +319,51 @@ footer
   height: 40px
   padding: 10px
   border-radius: 10px
+
+
+//Salles
+.salle__oeuvres
+  padding-top: 1rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 5rem
+  & .oeuvre
+    display: flex
+    flex-direction: column
+    font-family: $font
+    & a
+      text-decoration: none
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    & h2
+      padding-bottom: 0
+      text-decoration: none
+      color: $noir
+      font-size: 2rem
+    & div
+      display: flex
+      justify-content: center
+      padding-inline: 2rem
+      font-size: 3rem
+      & a
+        padding-inline: 2rem
+        color: $vertCacaDoi
+.description
+  background-color: $blanc
+  padding-inline: 10em
+  display: flex
+  gap: 2em
+  padding-block: 7em
+  padding-bottom: 5em
+  & p
+    font-size: $para
+  & video
+    background-color: $noir
+    height: 500px
+    width: 500px
+  & .txt
+    display: flex
+    flex-direction: column

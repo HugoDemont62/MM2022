@@ -66,7 +66,16 @@ h2 {
   background-color: #ededed;
   color: black;
   padding-inline: 10em;
-  padding-block: 10em;
+  padding-bottom: 15em;
+  padding-top: 5em;
+}
+
+.article h2 {
+  font-size: 52px;
+  text-transform: uppercase;
+  padding-bottom: 3em;
+  font-family: "Founders Grotesque Regular", sans-serif;
+  font-weight: 700;
 }
 
 .contain {
@@ -141,13 +150,10 @@ h2 {
   position: absolute;
   padding: 1em 2em;
   cursor: pointer;
-  background: #ccc;
-  border-radius: 5px;
-  border-top: 1px solid #fff;
+  font-size: 60px;
   transition: box-shadow 0.1s, top 0.1s;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 1px 0 #999;
 }
 
 #next:hover, #prev:hover {
@@ -257,7 +263,7 @@ footer .copyright {
 #contain2 h3 {
   color: white;
   font-size: 3rem;
-  padding-bottom: 1.5em;
+  padding-block: 1rem;
 }
 #contain2 input:not(.insere) {
   color: #F6F6F6;
@@ -352,6 +358,63 @@ footer .copyright {
   height: 40px;
   padding: 10px;
   border-radius: 10px;
+}
+
+.salle__oeuvres {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+.salle__oeuvres .oeuvre {
+  display: flex;
+  flex-direction: column;
+  font-family: "Founders Grotesque Regular", sans-serif;
+}
+.salle__oeuvres .oeuvre a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.salle__oeuvres .oeuvre h2 {
+  padding-bottom: 0;
+  text-decoration: none;
+  color: #202020;
+  font-size: 2rem;
+}
+.salle__oeuvres .oeuvre div {
+  display: flex;
+  justify-content: center;
+  padding-inline: 2rem;
+  font-size: 3rem;
+}
+.salle__oeuvres .oeuvre div a {
+  padding-inline: 2rem;
+  color: #329292;
+}
+
+.description {
+  background-color: #F6F6F6;
+  padding-inline: 10em;
+  display: flex;
+  gap: 2em;
+  padding-block: 7em;
+  padding-bottom: 5em;
+}
+.description p {
+  font-size: 1.2rem;
+}
+.description video {
+  background-color: #202020;
+  height: 500px;
+  width: 500px;
+}
+.description .txt {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
