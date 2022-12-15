@@ -7,7 +7,6 @@
 html
   font-size: 62.5%
 
-/*/////////////////////////////////   Header //////////////////////////////////////*
 header
   background-color: #202020
   height: 100px
@@ -17,26 +16,134 @@ header
   justify-content: space-between
   padding-inline: 6em
   position: fixed
+  z-index: 999
+  & a
+    height: 100%
+  & img
+    height: 100%
+  & i
+    color: white
+    font-size: 30px
+    transition: 1s
+  & i:hover
+    color: gray
+  & .icone
+    display: flex
+    gap: 5em
 
-header a
-  height: 100%
-
-header img
-  height: 100%
-
-header i
-  color: white
-  font-size: 30px
-  transition: 1s
-
-header i:hover
-  color: gray
-
-header .icone
+#presentation
+  background-color: #d6d6d6
+  padding-top: 15em
   display: flex
-  gap: 5em
+  flex-direction: column
+  & .muse
+    display: flex
+    gap: 5em
+    color: black
+    padding-bottom: 5em
+    padding-inline: 10em
+    & h2
+      font-size: 52px
+      text-transform: uppercase
+      padding-bottom: 1em
+      font-family: "Founders Grotesque Regular", sans-serif
+      font-weight: 700
+    & p
+      font-size: 16px
+    & img
+      height: 50%
+  & .article
+    background-color: #ededed
+    color: black
+    padding-inline: 10em
+    padding-block: 10em
+    & .contain
+      margin: 0 auto
+      width: 250px
+      height: 200px
+      position: relative
+      perspective: 1000px
+    & .carousel
+      height: 100%
+      width: 100%
+      position: absolute
+      transform-style: preserve-3d
+      transition: transform 1s
+      z-index: 0
+      & .item
+        display: block
+        position: absolute
+        background: #000
+        width: 250px
+        height: 200px
+        line-height: 200px
+        font-size: 5em
+        text-align: center
+        color: #fff
+        opacity: 0.95
+        border-radius: 10px
 
-/*///////////////////////////////////////// Footer //////////////////////////////////////*
+.a
+  transform: rotateY(0deg) translateZ(250px)
+  background: #ed1c24
+.b
+  transform: rotateY(60deg) translateZ(250px)
+  background: #0072bc
+.c
+  transform: rotateY(120deg) translateZ(250px)
+  background: #39b54a
+.d
+  transform: rotateY(180deg) translateZ(250px)
+  background: #f26522
+.e
+  transform: rotateY(240deg) translateZ(250px)
+  background: #630460
+.f
+  transform: rotateY(300deg) translateZ(250px)
+  background: #8c6239
+
+#next, #prev
+  color: rgb(37, 37, 37)
+  display: flex
+  justify-content: space-between
+  position: absolute
+  padding: 1em 2em
+  cursor: pointer
+  background: #ccc
+  border-radius: 5px
+  border-top: 1px solid #fff
+  box-shadow: 0 5px 0 #999
+  transition: box-shadow 0.1s, top 0.1s
+
+#next:hover, #prev:hover
+  color: #000
+
+#next:active, #prev:active
+  top: 104px
+  box-shadow: 0 1px 0 #999
+
+#next
+  right: 5em
+#prev
+  left: 5em
+
+.media
+  background-color: #d6d6d6
+  padding-inline: 10em
+  display: flex
+  gap: 2em
+  padding-block: 7em
+  padding-bottom: 5em
+  & p
+    font-size: 16px
+  & .video
+    background-color: #202020
+    height: 500px
+    width: 500px
+  & .txt
+    display: flex
+    flex-direction: column
+
 footer
   position: absolute
   background: #202020
@@ -46,33 +153,41 @@ footer
   display: flex
   justify-content: center
   flex-direction: column
-  & h1
-    font-size: 52px
-    text-transform: uppercase
-    padding-bottom: 0.5em
-  & .container
-    display: flex
-    color: white
-    text-decoration: none
-    gap: 10em
-    padding-inline: 20em
-    padding-block: 8em
-    &:where(.pages, .musee, .reseaux, .propos)
-      display: flex
-      flex-direction: column
-      gap: 1em
-    & a
-      color: white
-      text-decoration: none
-      transition: 1s
-      font-size: 24px
-      &:hover
-        color: gray
-      & .copyright
-        display: flex
-        font-size: 20px
-        color: white
-        background-color: rgba(0, 0, 0, 0.475)
-        align-items: center
-        justify-content: center
-        padding: 2em
+  box-shadow: 1px -4px 5px rgba(26, 26, 26, 0.67)
+
+.container
+  display: flex
+  color: white
+  text-decoration: none
+  gap: 8em
+  padding-inline: 15em
+  padding-block: 8em
+  justify-content: center
+
+.container :where(.pages, .musee, .reseaux, .propos)
+  display: flex
+  flex-direction: column
+  gap: 1em
+
+h1
+  font-size: 32px
+  text-transform: uppercase
+  padding-bottom: 0.5em
+
+.container a
+  color: white
+  text-decoration: none
+  transition: 1s
+  font-size: 16px
+
+.container a:hover
+  color: gray
+
+.copyright
+  display: flex
+  font-size: 20px
+  color: white
+  background-color: rgba(0, 0, 0, 0.475)
+  align-items: center
+  justify-content: center
+  padding: 2em
