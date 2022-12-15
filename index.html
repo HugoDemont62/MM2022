@@ -41,18 +41,36 @@
   </div>
   <div class="article">
     <h2>Notre gallerie</h2>
-    <div class="contain">
-      <div class="carousel">
-        <div class="item a">A <img src="" alt="" /></div>
-        <div class="item b">B <img src="" alt="" /></div>
-        <div class="item c">C <img src="" alt="" /></div>
-        <div class="item d">D <img src="" alt="" /></div>
-        <div class="item e">E <img src="" alt="" /></div>
-        <div class="item f">F <img src="" alt="" /></div>
+    <div class="gallery_container">
+      <div class="contain">
+        <div class="carousel">
+          <div class="item a">
+            <a href="">A <img src="" alt="" /></a>
+          </div>
+          <div class="item b">
+            <a href="">B <img src="" alt="" /></a>
+          </div>
+          <div class="item c">
+            <a href="">C <img src="" alt="" /></a>
+          </div>
+          <div class="item d">
+            <a href="">D <img src="" alt="" /></a>
+          </div>
+          <div class="item e">
+            <a href="">E <img src="" alt="" /></a>
+          </div>
+          <div class="item f">
+            <a href="">F <img src="" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div id="next" onclick="rotate('n');return false;">
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div id="prev" onclick="rotate('p');return false;">
+        <i class="bx bx-chevron-left"></i>
       </div>
     </div>
-    <div id="next">Next</div>
-    <div id="prev">Prev</div>
     <script src="js/main.js"></script>
   </div>
   <div class="media">

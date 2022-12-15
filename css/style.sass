@@ -42,7 +42,6 @@ $para: 1.2rem
     transition: 1s
   & i:hover
     color: gray
-
 h2
   font-size: $titre
   text-transform: uppercase
@@ -65,55 +64,67 @@ h2
       font-size: $para
     & img
       height: 50%
-  & .article
-    background-color: $blanc
-    color: black
-    padding-inline: 10em
-    padding-block: 10em
-    & .contain
-      margin: 0 auto
-      width: 250px
-      height: 200px
-      position: relative
-      perspective: 1000px
-    & .carousel
-      height: 100%
-      width: 100%
-      position: absolute
-      transform-style: preserve-3d
-      transition: transform 1s
-      z-index: 0
-      & .item
-        display: block
-        position: absolute
-        background: $noir
-        width: 250px
-        height: 200px
-        line-height: 200px
-        font-size: 5em
-        text-align: center
-        color: $blanc
-        opacity: 0.95
-        border-radius: 10px
 
-      & .a
-        transform: rotateY(0deg) translateZ(250px)
-        background: #ed1c24
-      & .b
-        transform: rotateY(60deg) translateZ(250px)
-        background: #0072bc
-      & .c
-        transform: rotateY(120deg) translateZ(250px)
-        background: #39b54a
-      & .d
-        transform: rotateY(180deg) translateZ(250px)
-        background: #f26522
-      & .e
-        transform: rotateY(240deg) translateZ(250px)
-        background: #630460
-      & .f
-        transform: rotateY(300deg) translateZ(250px)
-        background: #8c6239
+.article
+  background-color: #ededed
+  color: black
+  padding-inline: 10em
+  padding-block: 10em
+
+.contain
+  margin: 0 auto
+  width: 250px
+  height: 200px
+  position: relative
+  perspective: 1000px
+
+.gallery_container
+  position: relative
+
+.carousel
+  height: 100%
+  width: 100%
+  position: absolute
+  transform-style: preserve-3d
+  transition: transform 1s
+  z-index: 0
+
+.item
+  display: block
+  position: absolute
+  background: #000
+  width: 250px
+  height: 200px
+  line-height: 200px
+  font-size: 5em
+  text-align: center
+  color: #fff
+  opacity: 0.95
+  border-radius: 10px
+
+.a
+  transform: rotateY(0deg) translateZ(250px)
+  background: #ed1c24
+
+.b
+  transform: rotateY(60deg) translateZ(250px)
+  background: #0072bc
+
+.c
+  transform: rotateY(120deg) translateZ(250px)
+  background: #39b54a
+
+.d
+  transform: rotateY(180deg) translateZ(250px)
+  background: #f26522
+
+.e
+  transform: rotateY(240deg) translateZ(250px)
+  background: #630460
+
+.f
+  transform: rotateY(300deg) translateZ(250px)
+  background: #8c6239
 
 #next, #prev
   color: rgb(37, 37, 37)
@@ -124,21 +135,21 @@ h2
   cursor: pointer
   background: #ccc
   border-radius: 5px
-  border-top: 1px solid $blanc
-  box-shadow: 0 5px 0 $gris
+  border-top: 1px solid #fff
   transition: box-shadow 0.1s, top 0.1s
-
-#next:hover, #prev:hover
-  color: $noir
-
-#next:active, #prev:active
-  top: 104px
+  top: 50%
+  transform: translateY(-50%)
   box-shadow: 0 1px 0 #999
 
+#next:hover, #prev:hover
+  color: #000
+
 #next
-  right: 5em
+  right: 0
+
 #prev
-  left: 5em
+  left: 0
+
 
 .media
   background-color: $blanc
@@ -160,8 +171,8 @@ h2
 footer
   position: absolute
   background: $noir
-  width: 100%
   color: $blanc
+  width: 100%
   text-decoration: none
   display: flex
   justify-content: center
@@ -180,7 +191,7 @@ footer
     flex-direction: column
     gap: 1em
   & h1
-    font-size: 32px
+    font-size: $titre
     text-transform: uppercase
     padding-bottom: 0.5em
   & a

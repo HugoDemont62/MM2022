@@ -61,20 +61,27 @@ h2 {
 #presentation .muse img {
   height: 50%;
 }
-#presentation .article {
-  background-color: #F6F6F6;
+
+.article {
+  background-color: #ededed;
   color: black;
   padding-inline: 10em;
   padding-block: 10em;
 }
-#presentation .article .contain {
+
+.contain {
   margin: 0 auto;
   width: 250px;
   height: 200px;
   position: relative;
   perspective: 1000px;
 }
-#presentation .article .carousel {
+
+.gallery_container {
+  position: relative;
+}
+
+.carousel {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -82,40 +89,47 @@ h2 {
   transition: transform 1s;
   z-index: 0;
 }
-#presentation .article .carousel .item {
+
+.item {
   display: block;
   position: absolute;
-  background: #202020;
+  background: #000;
   width: 250px;
   height: 200px;
   line-height: 200px;
   font-size: 5em;
   text-align: center;
-  color: #F6F6F6;
+  color: #fff;
   opacity: 0.95;
   border-radius: 10px;
 }
-#presentation .article .carousel .a {
+
+.a {
   transform: rotateY(0deg) translateZ(250px);
   background: #ed1c24;
 }
-#presentation .article .carousel .b {
+
+.b {
   transform: rotateY(60deg) translateZ(250px);
   background: #0072bc;
 }
-#presentation .article .carousel .c {
+
+.c {
   transform: rotateY(120deg) translateZ(250px);
   background: #39b54a;
 }
-#presentation .article .carousel .d {
+
+.d {
   transform: rotateY(180deg) translateZ(250px);
   background: #f26522;
 }
-#presentation .article .carousel .e {
+
+.e {
   transform: rotateY(240deg) translateZ(250px);
   background: #630460;
 }
-#presentation .article .carousel .f {
+
+.f {
   transform: rotateY(300deg) translateZ(250px);
   background: #8c6239;
 }
@@ -129,26 +143,23 @@ h2 {
   cursor: pointer;
   background: #ccc;
   border-radius: 5px;
-  border-top: 1px solid #F6F6F6;
-  box-shadow: 0 5px 0 #D6D6D6;
+  border-top: 1px solid #fff;
   transition: box-shadow 0.1s, top 0.1s;
-}
-
-#next:hover, #prev:hover {
-  color: #202020;
-}
-
-#next:active, #prev:active {
-  top: 104px;
+  top: 50%;
+  transform: translateY(-50%);
   box-shadow: 0 1px 0 #999;
 }
 
+#next:hover, #prev:hover {
+  color: #000;
+}
+
 #next {
-  right: 5em;
+  right: 0;
 }
 
 #prev {
-  left: 5em;
+  left: 0;
 }
 
 .media {
@@ -175,8 +186,8 @@ h2 {
 footer {
   position: absolute;
   background: #202020;
-  width: 100%;
   color: #F6F6F6;
+  width: 100%;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -198,7 +209,7 @@ footer :where(.pages, .musee, .reseaux, .propos) {
   gap: 1em;
 }
 footer h1 {
-  font-size: 32px;
+  font-size: 3rem;
   text-transform: uppercase;
   padding-bottom: 0.5em;
 }
