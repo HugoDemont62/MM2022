@@ -35,7 +35,7 @@
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   padding-bottom: 1em;
   font-family: "Founders Grotesque Regular", sans-serif;
@@ -56,7 +56,7 @@ h2 {
   padding-inline: 10em;
 }
 #presentation .muse p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 #presentation .muse img {
   height: 50%;
@@ -160,7 +160,7 @@ h2 {
   padding-bottom: 5em;
 }
 .media p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .media video {
   background-color: #202020;
@@ -245,7 +245,7 @@ footer .copyright {
 }
 #contain2 h3 {
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   padding-bottom: 1.5em;
 }
 #contain2 input:not(.insere) {
@@ -265,7 +265,7 @@ footer .copyright {
   justify-content: center;
 }
 #contain2 button {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   width: 30%;
   height: 60px;
