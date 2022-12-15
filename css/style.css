@@ -417,4 +417,147 @@ footer .copyright {
   flex-direction: column;
 }
 
+#cont {
+  font-family: "Founders Grotesque Regular", sans-serif;
+  padding-top: 12em;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+#cont .contai {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 15em;
+}
+#cont .contai .oeuvre img {
+  object-fit: contain;
+  height: 100%;
+}
+#cont .contai .comment label {
+  font-size: 32px;
+}
+#cont .contai .comment input {
+  padding-top: 1em;
+}
+#cont .contai .nom h3 {
+  color: white;
+  font-size: 42px;
+  padding-bottom: 1.5em;
+}
+#cont .contai h4 {
+  color: white;
+  font-size: 38px;
+}
+#cont .formulaire form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  padding-bottom: 5em;
+}
+#cont .formulaire button {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  height: 60px;
+  padding: 0.5em;
+  background-color: rgb(32, 92, 92);
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.formulaire button:hover {
+  background-color: white;
+  color: #202020;
+}
+
+#cont input {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  font-size: 24px;
+  outline: none;
+  border-right: none;
+}
+
+.right {
+  width: 45%;
+}
+
+.left {
+  padding-left: 1.2rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.desc span {
+  font-size: 28px;
+}
+
+.desc p {
+  font-size: 16px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  color: white;
+  font-size: 18px;
+}
+
+.like i {
+  font-size: 30px;
+  color: #F6F6F6;
+}
+
+.like i:hover {
+  color: gray;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+  color: #F6F6F6;
+}
+.error div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.error div a {
+  font-family: "Founders Grotesque Regular", sans-serif;
+  font-size: 2rem;
+  background: #F6F6F6;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #202020;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.error div a:hover {
+  transform: scale(0.9);
+}
+.error div img {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+}
+.error h1 {
+  font-size: 5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
