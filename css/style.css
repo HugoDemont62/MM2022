@@ -258,7 +258,7 @@ footer .copyright {
 }
 
 #contain2 {
-  background-color: #202020;
+  background: #202020;
   padding-inline: 30em;
   padding-block: 5em;
   display: flex;
@@ -574,6 +574,53 @@ footer .copyright {
 }
 .error h1 {
   font-size: 5rem;
+}
+
+.userPage {
+  background: #202020;
+  color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.userPage .user-information {
+  display: flex;
+  flex-direction: column;
+}
+.userPage .user-information-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.userPage .user-information-info h1 {
+  font-size: 5rem;
+}
+.userPage .user-information-info .info div {
+  display: flex;
+  justify-content: space-between;
+}
+.userPage .user-information-info .info div p {
+  color: red;
+}
+
+.about {
+  padding-top: 15em;
+  padding-inline: 10em;
+  background-color: #202020;
+}
+.about h5 {
+  font-size: 42px;
+  color: white;
+  padding-bottom: 1em;
+}
+.about p {
+  color: white;
+  padding-bottom: 5em;
+  font-size: 20px;
+  line-height: 40px;
+}
+.about span {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

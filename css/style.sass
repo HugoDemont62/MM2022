@@ -19,6 +19,8 @@ $para: 1.2rem
   margin: 0 0
   font-family: $font
 
+
+
 .header1
   background-color: $noir
   height: 100px
@@ -234,7 +236,7 @@ footer
     height: 100%
 
 #contain2
-  background-color: $noir
+  background: $noir
   padding-inline: 30em
   padding-block: 5em
   display: flex
@@ -503,3 +505,41 @@ footer
   & h1
     font-size: 5rem
 
+.userPage
+  background: $noir
+  color: $blanc
+  display: flex
+  justify-content: center
+  padding: 3rem
+  & .user-information
+    display: flex
+    flex-direction: column
+    &-image img
+      width: 300px
+      height: 300px
+      border-radius: 50%
+    &-info
+      & h1
+        font-size: 5rem
+      & .info
+        & div
+          display: flex
+          justify-content: space-between
+          & p
+            color: red
+
+.about
+  padding-top: 15em
+  padding-inline: 10em
+  background-color: #202020
+  & h5
+    font-size: 42px
+    color: white
+    padding-bottom: 1em
+  & p
+    color: white
+    padding-bottom: 5em
+    font-size: 20px
+    line-height: 40px
+  & span
+    font-size: 24px
