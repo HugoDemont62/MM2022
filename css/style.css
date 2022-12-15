@@ -176,6 +176,7 @@ h2 {
   background-color: #F6F6F6;
   padding-inline: 10em;
   display: flex;
+  flex-direction: column;
   gap: 2em;
   padding-block: 7em;
   padding-bottom: 5em;
@@ -185,8 +186,8 @@ h2 {
 }
 .media video {
   background-color: #202020;
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: auto;
 }
 .media .txt {
   display: flex;
@@ -258,11 +259,11 @@ footer .copyright {
 
 #contain2 {
   background-color: #202020;
-  padding-inline: 40em;
+  padding-inline: 30em;
   padding-block: 5em;
   display: flex;
   flex-direction: column;
-  gap: 10em;
+  gap: 5em;
 }
 #contain2 h3 {
   color: white;
