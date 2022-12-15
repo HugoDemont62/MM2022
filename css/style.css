@@ -581,11 +581,15 @@ footer .copyright {
   color: #F6F6F6;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 3rem;
+  box-shadow: 0 17px 13px 0 #f6f6f6;
 }
 .userPage .user-information {
   display: flex;
   flex-direction: column;
+  width: 350px;
 }
 .userPage .user-information-image img {
   width: 300px;
@@ -601,6 +605,13 @@ footer .copyright {
 }
 .userPage .user-information-info .info div p {
   color: red;
+}
+.userPage .userLike h2 {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+.userPage .userLike .salle__oeuvres {
+  gap: 1rem;
 }
 
 .about {

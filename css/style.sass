@@ -510,10 +510,14 @@ footer
   color: $blanc
   display: flex
   justify-content: center
+  align-items: center
+  flex-direction: column
   padding: 3rem
+  box-shadow: 0 17px 13px 0 #f6f6f6
   & .user-information
     display: flex
     flex-direction: column
+    width: 350px
     &-image img
       width: 300px
       height: 300px
@@ -527,6 +531,12 @@ footer
           justify-content: space-between
           & p
             color: red
+  & .userLike
+    & h2
+      padding-top: 3rem
+      padding-bottom: 0
+    .salle__oeuvres
+      gap: 1rem
 
 .about
   padding-top: 15em
